@@ -1,0 +1,17 @@
+name: IntelliCode Team Completions
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: IntelliCode Team Completions
+      uses: microsoft/vs-intellicode@v1.0
