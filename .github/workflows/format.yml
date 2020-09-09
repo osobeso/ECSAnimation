@@ -18,13 +18,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.301
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/setup-node@v1.4.3
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: npm install
-        run: npm i
       - name: add .dotnet/tools to path
         run: echo "::set-env name=PATH::${PATH}:${HOME}/.dotnet/tools"
       - run: dotnet tool install dotnet-format -g
