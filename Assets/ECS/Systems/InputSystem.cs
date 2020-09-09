@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using PlayerInput = ECSAnimation.Inputs.PlayerInput;
-using Unity.Entities;
+﻿using Unity.Entities;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using PlayerInput = ECSAnimation.Inputs.PlayerInput;
 
 namespace ECSAnimation.Systems
 {

@@ -1,5 +1,5 @@
-﻿using Unity.Entities;
-using ECSAnimation.Systems;
+﻿using ECSAnimation.Systems;
+using Unity.Entities;
 using Unity.Mathematics;
 
 /// <summary>
@@ -17,7 +17,7 @@ public class MovementInputSystem : ComponentSystem
     {
         Entities.ForEach((ref InputData inputData, ref MoveData moveData, ref FaceTowardsData faceTowards) =>
         {
-            if(inputData.movement.magnitude > 0)
+            if (inputData.movement.magnitude > 0)
             {
                 moveData.direction = new float3(inputData.movement.x, inputData.movement.y, moveData.direction.z);
                 if (inputData.crouch)

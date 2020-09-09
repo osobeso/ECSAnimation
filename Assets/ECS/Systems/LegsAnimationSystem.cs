@@ -18,7 +18,7 @@ public class LegsAnimationSystem : ComponentSystem
             {
                 // For some reason the guy jumps two times.
                 // Probably ECS fault and not my Animator controller skills.
-                if(inputData.jump && !inputData.crouch)
+                if (inputData.jump && !inputData.crouch)
                 {
                     animationData.name = AnimationTriggerNames.LegsJump;
                     return;

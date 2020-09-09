@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using Unity.Entities;
+﻿using Unity.Entities;
+using UnityEngine;
 
 namespace ECSAnimation.Systems
 {

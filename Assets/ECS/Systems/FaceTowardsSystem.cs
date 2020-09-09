@@ -16,7 +16,7 @@ namespace ECSAnimation.Systems
         {
             Entities.ForEach((ref Translation pos, ref Rotation rot, ref FaceTowardsData faceTowards) =>
             {
-                if(faceTowards.faceTowards.x == 0f && faceTowards.faceTowards.y == 0f)
+                if (faceTowards.faceTowards.x == 0f && faceTowards.faceTowards.y == 0f)
                 {
                     return;
                 }

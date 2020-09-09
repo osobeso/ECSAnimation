@@ -1,7 +1,7 @@
-﻿using Unity.Entities;
-using ECSAnimation.Systems;
-using Unity.Transforms;
+﻿using ECSAnimation.Systems;
+using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Transforms;
 
 public class LookInputSystem : ComponentSystem
 {
