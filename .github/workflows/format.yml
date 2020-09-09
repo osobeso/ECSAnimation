@@ -27,7 +27,7 @@ jobs:
         run: npm i
       - name: add .dotnet/tools to path
         run: echo "::set-env name=PATH::${PATH}:${HOME}/.dotnet/tools"
-      - run: dotnet tool install -g dotnet-format
+      - run: dotnet tool install dotnet-format -g
       - run: dotnet format --folder ${ github.workspace }
       - name: Push formatted files.
         run: |
