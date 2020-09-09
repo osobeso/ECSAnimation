@@ -29,7 +29,7 @@ jobs:
       - name: add .dotnet/tools to path
         run: echo "::set-env name=PATH::${PATH}:${HOME}/.dotnet/tools"
       - run: dotnet tool install dotnet-format --version 5.0.135301 --add-source https://dotnet.myget.org/F/format/api/v3/index.json
-      - run: dotnet format --folder ${ github.workspace }
+      - run: dotnet format --folder ./
       - name: Push formatted files.
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
