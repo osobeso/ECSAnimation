@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
       - name: add .dotnet/tools to path
         run: echo "::set-env name=PATH::${PATH}:${HOME}/.dotnet/tools"
-      - run: dotnet tool install dotnet-format -g
+      - run: dotnet tool install dotnet-format
       - run: dotnet format --folder ${ github.workspace }
       - name: Push formatted files.
         run: |
